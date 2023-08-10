@@ -1,16 +1,56 @@
 @import url('https://fonts.googleapis.com/css2?family=Belleza&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Belleza&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Montserrat:wght@100&display=swap');
 
-.Contentlogo{
-  display: flex;
-  margin: 5px; 
-  height: 40px;
-  margin: 10px;
+*{
+  padding: 0%;
+  margin: 0%;
+  box-sizing: border-box;
 }
 
 .Contentlogo h1{
   font-family: 'Belleza', sans-serif;
   letter-spacing: 3px;
   font-weight: 100;
+}
+
+header{
+  box-shadow: 0px px 10px 0px rgb(199, 199, 199);
+}
+
+.header-main{
+  display: grid;
+  grid-template-columns: 100px 1fr 100px;
+  justify-items: center;
+  align-items: center;
+}
+
+.img-tec{
+  height: 50px;
+  width: 50px;
+  margin-top: 20px;
+}
+
+.nome-site{
+  margin-right: 50px;
+}
+
+.nome-site h1{
+font-size: 60px;
+font-weight: 500;
+font-family: 'Montserrat', sans-serif;
+}
+
+.subtitulo{
+  box-shadow: 0px 8px 700px 0px rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+  text-align: center;
+}
+
+.subtitulo h4{
+font-size: 30px;
+font-weight: 100;
+font-family: 'Great Vibes', cursive;
 }
 
 .overlay{
@@ -44,7 +84,7 @@
   
   .menu-trigger {
     position: absolute;
-    top: 10px;
+    top: 3%;
     right: 10px;
     padding: 10px 20px;
     background-color: #fff;
@@ -56,6 +96,9 @@
   }
 
   .menu-trigger:hover{
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    box-shadow: 0px 8px 70px 5px rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
     transition: all 0.5s ease-in-out;
   }
+
+  
+
