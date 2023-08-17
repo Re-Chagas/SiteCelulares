@@ -3,11 +3,27 @@
 @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Montserrat:wght@100&display=swap');
 
+html{
+  scroll-behavior: smooth;
+}
+
 *{
   padding: 0%;
   margin: 0%;
   box-sizing: border-box;
 }
+
+:root{
+  --Branco: white;
+  --Cinza-Claro: rgb(199, 199, 199);
+  --Preto: black;
+}
+
+::-webkit-scrollbar{
+  display: none;
+}
+
+/*Header************************************************************************/
 
 .Contentlogo h1{
   font-family: 'Belleza', sans-serif;
@@ -16,7 +32,7 @@
 }
 
 header{
-  box-shadow: 0px px 10px 0px rgb(199, 199, 199);
+  box-shadow: 0px  0px 15px 0px var(--Cinza-Claro);
 }
 
 .header-main{
@@ -43,7 +59,7 @@ font-family: 'Montserrat', sans-serif;
 }
 
 .subtitulo{
-  box-shadow: 0px 8px 700px 0px rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+  box-shadow: 0px 8px 700px 0px rgba(0, 0, 0, 0), 0 6px 20px 0 rgba(0, 0, 0, 0.068);
   text-align: center;
 }
 
@@ -52,6 +68,8 @@ font-size: 30px;
 font-weight: 100;
 font-family: 'Great Vibes', cursive;
 }
+
+/*Menu**************************************************************************************/
 
 .overlay{
     position: fixed;
@@ -77,7 +95,7 @@ font-family: 'Great Vibes', cursive;
   }
   
   .menu li a {
-    color: #fff;
+    color: var(--Branco);
     font-size: 24px;
     text-decoration: none;
   }
@@ -87,8 +105,8 @@ font-family: 'Great Vibes', cursive;
     top: 3%;
     right: 10px;
     padding: 10px 20px;
-    background-color: #fff;
-    color: #000;
+    background-color: var(--Branco);
+    color: var(--Preto);
     font-size: 16px;
     border: none;
     cursor: pointer;
@@ -100,5 +118,8 @@ font-family: 'Great Vibes', cursive;
     transition: all 0.5s ease-in-out;
   }
 
-  
+/*Main*/
 
+main{
+  margin-top: 20px;
+}
