@@ -33,6 +33,7 @@ html{
 
 header{
   box-shadow: 0px  0px 15px 0px var(--Cinza-Claro);
+  height: 10vh;   
 }
 
 .header-main{
@@ -45,7 +46,6 @@ header{
 .img-tec{
   height: 50px;
   width: 50px;
-  margin-top: 20px;
 }
 
 .nome-site{
@@ -54,13 +54,15 @@ header{
 
 .nome-site h1{
 font-size: 60px;
-font-weight: 500;
+font-weight: 400;
 font-family: 'Montserrat', sans-serif;
 }
 
 .subtitulo{
   box-shadow: 0px 8px 700px 0px rgba(0, 0, 0, 0), 0 6px 20px 0 rgba(0, 0, 0, 0.068);
   text-align: center;
+  margin-bottom: 20px;
+  margin-top: -15px;
 }
 
 .subtitulo h4{
@@ -113,13 +115,55 @@ font-family: 'Great Vibes', cursive;
     transition: all 1s;
   }
 
-  .menu-trigger:hover{
-    box-shadow: 0px 8px 70px 5px rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
-    transition: all 0.5s ease-in-out;
-  }
-
 /*Main*/
 
 main{
   margin-top: 20px;
+}
+
+/*noticias Principal*/
+
+.box {
+  width: 100px;
+  height: 300px;
+  border: 1px solid black;
+}
+
+.inner-box {
+  background-color: red;
+  padding: 10px;
+}
+
+.news-box {
+  width: 100%;
+  margin: 10px auto;
+  border: 1px solid black;
+  padding: 10px;
+  background-color: #fff;
+}
+
+.news-title {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.news-body {
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.news-meta {
+  margin-top: 10px;
+}
+
+.news-author {
+  font-size: 14px;
+}
+
+.news-date {
+  font-size: 14px;
+}
+
+.news-category {
+  font-size: 14px;
 }
