@@ -35,7 +35,7 @@ section.slider{
 .nav-manual, .nav-auto{
     position: absolute;
     width: 100vw;
-    top: 97vh;
+    top: 180vh;
     left: 50%;
     transform: translate(-50%, -50%);
     display: flex;
