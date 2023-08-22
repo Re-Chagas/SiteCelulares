@@ -167,3 +167,128 @@ main{
 .news-category {
   font-size: 14px;
 }
+
+/*caixa de noticias*/
+
+article{
+  margin-top: 20vh;
+  margin-bottom: 30vh;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+.box {
+  width: 350px;
+  height: 250px;
+  border-radius: 8px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  margin-left: 5px;
+}
+
+.box img {
+  width: 100%;
+  height: 205px;
+}
+
+.box .TituloN {
+  padding: 10px;
+  background-color: #3498db;
+  color: white;
+  font-size: 18px;
+  text-align: center;
+}
+
+/* carrosel */
+section.slider{
+  margin: 0 auto;
+  width: 100vw;
+  height: 90vh ;
+  padding: 0 !important;
+  overflow: hidden;
+  border-radius: 10px;
+  border: 1px solid black;
+}
+
+.slider-content{
+  width: 400vw;
+  height: auto;
+  display: flex;
+}
+
+.slider-content input, .img-mobile{
+  display: none;
+}
+
+.slide-box{
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  text-align: center;
+  transition: 1s;
+}
+
+.slide-box img{
+  width: 100vw;
+  height: 100vh;
+  border-radius: 10px;
+}
+
+.nav-manual, .nav-auto{
+  position: absolute;
+  width: 100vw;
+  margin-top: 90vh;
+  display: flex;
+  justify-content: center;
+}
+
+.nav-manual .manual-btn, .nav-auto div{
+  border: 2px solid var(--Preto);
+  padding: 10px;
+  border-radius: 50% 50%;
+  cursor: pointer;
+  transition: 2s;
+}
+
+.nav-manual .manual-btn:not(:last-child), .nav-auto div:not(:last-child){
+  margin-right: 10px;
+}
+
+.nav-manual .manual-btn:hover{
+  background-color: var(--Preto);
+}
+
+#radio1:checked ~ .nav-auto .auto-btn1, 
+#radio2:checked ~ .nav-auto .auto-btn2, 
+#radio3:checked ~ .nav-auto .auto-btn3,
+#radio4:checked ~ .nav-auto .auto-btn4,
+#radio5:checked ~ .nav-auto .auto-btn5{
+  background-color: var(--Branco);
+}
+
+#radio1:checked ~ .primeiro{
+  margin-left: -0%;
+}
+
+#radio2:checked ~ .primeiro{
+  margin-left: -25%;
+}
+
+#radio3:checked ~ .primeiro{
+  margin-left:  -50%;
+}
+
+#radio4:checked ~ .primeiro{
+  margin-left:  -75%;
+}
+
+#radio5:checked ~ .primeiro{
+  margin-left: -100%;
+}
+
+
