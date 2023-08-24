@@ -55,9 +55,6 @@ header{
   width: 50px;
 }
 
-.nome-site{
-  margin-right: 50px;
-}
 
 .nome-site h1{
 font-size: 60px;
@@ -142,7 +139,6 @@ main{
 
 .news-box {
   width: 100%;
-  margin: 10px auto;
   border: 1px solid --Preto;
   padding: 10px;
   background-color: var(--Branco);
@@ -194,7 +190,6 @@ article{
   border-radius: 8px;
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
   overflow: hidden;
-  margin-left: 5px;
 }
 
 .box img {
@@ -255,7 +250,7 @@ section.slider{
 .nav-manual, .nav-auto{
   position: absolute;
   width: 100vw;
-  margin-top: 90vh;
+  margin-top: 85vh;
   display: flex;
   justify-content: center;
 }
@@ -304,8 +299,8 @@ section.slider{
   margin-left: -100%;
 }
 
-p {
-  animation-duration: 3s;
+article p {
+  animation-duration: 2s;
   animation-name: slidein;
   font-size: 30px;
   text-align: center;
@@ -569,6 +564,16 @@ p {
 
 }
 
+@media only screen and (max-width: 400px) {
+
+  header{
+    width: 100%;
+
+  }
+
+
+}
+
 @media only screen and (max-width: 768px) {
 
   .subtitulo{
@@ -627,12 +632,14 @@ p {
   .nav-manual, .nav-auto{
   position: absolute;
   width: 100vw;
-  margin-top: 230vh;
+  margin-top: 80vh;
   display: flex;
   justify-content: center;
   }
 
 }
+
+
 
 .container2 {
   display:flex;
@@ -665,6 +672,10 @@ display: flex;
 .slide .especial {
   font-size: 16px;
   margin: 10px;
+}
+
+.slide p{
+  font-size: 30px;
 }
 
 footer{
